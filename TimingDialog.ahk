@@ -2,8 +2,7 @@
 ; CARS; GI referral for follow-up C-scopes
 ; Walker Jackson, MD 5/22/18; 
 
-; here is Message Box display 
-MsgBox, 262144, Baseline Colon Follow Up Timing:                                        Interval,No Polyps						| 10 years`nSmall (<10mm) hyperplastic polyps in rectum or sigmoid	| 10 years`n1 to 2 small (<10mm) tubular adenomas			| 7-10 years`n3-10 tubular adenomas				| 3-5 years`n>10 adenomas					| <3 years`n>=1 tubular adenomas >=10mm			| 3 years`n>=1 villous adenomas				| 3 years`nAdenomas with HGD				| 3 years`nSerrated Lesions: `n    Sessile serrated polyps < 10mm w/o dysplasia		| 5 years`n    Sessile serrated polyps >= 10mm			| 3 years`n    Sessile serrated polyps w/dysplasia			| 3 years`n    Traditional serrated adenoma			| 3 years`nSerrated Polyposis Syndrome				| 1 year`nFMH of colon cancer or high risk adenomas		|  Every 5 years beginning 10 years younger than the age of the index relative
+; MsgBox, 262144, Baseline Colon Follow Up Timing:                                        Interval,No Polyps						| 10 years`nSmall (<10mm) hyperplastic polyps in rectum or sigmoid	| 10 years`n1 to 2 small (<10mm) tubular adenomas			| 7-10 years`n3-10 tubular adenomas				| 3-5 years`n>10 adenomas					| <3 years`n>=1 tubular adenomas >=10mm			| 3 years`n>=1 villous adenomas				| 3 years`nAdenomas with HGD				| 3 years`nSerrated Lesions: `n    Sessile serrated polyps < 10mm w/o dysplasia		| 5 years`n    Sessile serrated polyps >= 10mm			| 3 years`n    Sessile serrated polyps w/dysplasia			| 3 years`n    Traditional serrated adenoma			| 3 years`nSerrated Polyposis Syndrome				| 1 year`nFMH of colon cancer or high risk adenomas		|  Every 5 years beginning 10 years younger than the age of the index relative
 
 ; Here is a dialog display w/user choice recorded 
 Gui, Add, Text, x5 y0, Polyp Number and Pathology                                                  Screening Interval 
