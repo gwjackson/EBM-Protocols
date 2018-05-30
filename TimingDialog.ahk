@@ -2,7 +2,8 @@
 ; CARS; GI referral for follow-up C-scopes
 ; Walker Jackson, MD 5/22/18; 
 
-; MsgBox, 262144, Baseline Colon Follow Up Timing:                                        Interval,No Polyps						| 10 years`nSmall (<10mm) hyperplastic polyps in rectum or sigmoid	| 10 years`n1 to 2 small (<10mm) tubular adenomas			| 7-10 years`n3-10 tubular adenomas				| 3-5 years`n>10 adenomas					| <3 years`n>=1 tubular adenomas >=10mm			| 3 years`n>=1 villous adenomas				| 3 years`nAdenomas with HGD				| 3 years`nSerrated Lesions: `n    Sessile serrated polyps < 10mm w/o dysplasia		| 5 years`n    Sessile serrated polyps >= 10mm			| 3 years`n    Sessile serrated polyps w/dysplasia			| 3 years`n    Traditional serrated adenoma			| 3 years`nSerrated Polyposis Syndrome				| 1 year`nFMH of colon cancer or high risk adenomas		|  Every 5 years beginning 10 years younger than the age of the index relative
+; here is Message Box display 
+;MsgBox, 262144, Baseline Colon Follow Up Timing:                                        Interval,No Polyps						| 10 years`nSmall (<10mm) hyperplastic polyps in rectum or sigmoid	| 10 years`n1 to 2 small (<10mm) tubular adenomas			| 7-10 years`n3-10 tubular adenomas				| 3-5 years`n>10 adenomas					| <3 years`n>=1 tubular adenomas >=10mm			| 3 years`n>=1 villous adenomas				| 3 years`nAdenomas with HGD				| 3 years`nSerrated Lesions: `n    Sessile serrated polyps < 10mm w/o dysplasia		| 5 years`n    Sessile serrated polyps >= 10mm			| 3 years`n    Sessile serrated polyps w/dysplasia			| 3 years`n    Traditional serrated adenoma			| 3 years`nSerrated Polyposis Syndrome				| 1 year`nFMH of colon cancer or high risk adenomas		|  Every 5 years beginning 10 years younger than the age of the index relative
 
 ; Here is a dialog display w/user choice recorded 
 Gui, Add, Text, x5 y0, Polyp Number and Pathology                                                  Screening Interval 
@@ -36,14 +37,22 @@ Gui, Add, Text, x316 y347 w60 h20 , 3 years
 Gui, Add, Text, x316 y377 w60 h20 , 3 years
 Gui, Add, Text, x316 y407 w60 h20 , 1 year
 Gui, Add, Text, x316 y437 w60 h30 , 5 years
+Gui, Add, Text, x6 y477, Chose the date for the MOST RECENT PATHOLOGY 
+Gui, Add, DateTime, x30 y495 vPathDate, M/d/yy
+Gui, Add, Button, x300 y492, Done
+
 ; Generated using SmartGUI Creator for SciTE
-Gui, Show, w391 h482, Asymptomaitc Patients Only 
+Gui, Show, w391 h532, Asymptomaitc Patients Only 
 return
 
 ; user response 
 cPolyp:
 Gui, Submit, NoHide
+PolypType := cRBPolyp
+; PathDate set above 
 MsgBox, % "Got here -> "cRBPolyp
+MsgBox, % PathDate
+MsgBox, %C_RptStr%
 return
 
 GuiClose:
