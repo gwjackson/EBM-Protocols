@@ -38,8 +38,7 @@ Gui, Add, Text, x316 y377 w60 h20 , 3 years
 Gui, Add, Text, x316 y407 w60 h20 , 1 year
 Gui, Add, Text, x316 y437 w60 h30 , 5 years
 Gui, Add, Text, x6 y477, Chose the date for the MOST RECENT PATHOLOGY 
-Gui, Add, DateTime, x30 y495 vPathDate, M/d/yy
-Gui, Add, Button, x300 y492, Done
+Gui, Add, DateTime, x80 vPathDate, M/d/yy
 
 ; Generated using SmartGUI Creator for SciTE
 Gui, Show, w391 h532, Asymptomaitc Patients Only 
@@ -52,7 +51,6 @@ PolypType := cRBPolyp
 ; PathDate set above 
 MsgBox, % "Got here -> "cRBPolyp
 MsgBox, % PathDate
-MsgBox, %C_RptStr%
 return
 
 GuiClose:

@@ -141,7 +141,8 @@ return
 
 C_chart:
 ;run, TimingDialog.ahk
-goto PathGui
+gosub PathGui
+MsgBox, "clicked on Chart Button  " %PolypType% "`n" %PathDate%
 return 
 
 
@@ -227,6 +228,7 @@ Gui, 2:Add, DateTime, x30 y495 vPathDate gPathDate, M/d/yy
 Gui, 2:Add, Button, x300 y492, Done
 ; Generated using SmartGUI Creator for SciTE
 Gui, 2:Show, w391 h532, Asymptomaitc Patients Only 
+PathDate := "too soon"
 return
 
 ; user response 
